@@ -1,31 +1,24 @@
 const expressionValidator = require("../generals/shuntingYard/expressValidator");
+const postfix = require("../generals/shuntingYard/postfix");
 
 const evaluate = (req, res) =>{
-    res.send(req);/*
-    const result = expressionValidator.evaluate(req.exp);
+    const result = expressionValidator.evaluate(req.body.exp);
+    const resultValidated = postfix.postFixValidator(result.postfix);
 
-    if(result){
+    if(result && resultValidated){
         const response = {
-            infix:"INFIX_EXPRESSION",
-            postfix: "POSTFIX_EXPRESSION",
-            result: "VALUE",
-            request: req
+            infix:req.body.exp,
+            postfix: result.postfix,
+            result: resultValidated
         }
         res.status(200).send(response);
-    }else{
-        const response = {
-            message: "The expression "+req.exp+" is invalid",
-        }
-        res.status(400).send(response);
+    }else if(!resultValidated){
+        
+            const response = {
+                message: "The expression "+req.body.exp+" is invalid",
+            }
+            res.status(400).send(response);
     }
-
-      /*  return user.create({
-            name:req.body.name,
-            date:req.body.date,
-            lifemiles:req.body.lmnumber
-        })
-        .then(company => res.status(201).send(company))
-        .catch(error => res.status(400).send(error))*/
     }
 
 exports.evaluate = evaluate;
