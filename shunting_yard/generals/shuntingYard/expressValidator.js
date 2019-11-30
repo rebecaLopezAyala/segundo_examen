@@ -9,8 +9,8 @@ function evaluate(exp){
             number += parseInt(element);
             factorsQueue.push(element);
         }else{
-            const newPrecedence = operators.operatorPrecedence(element)
-            if(newPrecedence==-1){
+            const newPrecedence = operators.operatorPrecedence(element);
+            if(newPrecedence==-1 && operators.symbolToOperator(element)){
                 number += element;
                 factorsQueue.push(element);
             } else

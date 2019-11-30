@@ -24,6 +24,7 @@ function symbolToOperator(symbol) {
         case '-': return minus;
         case '*': return multiply;
         case '/': return divide;
+        case '.': return symbol;
         default: return false;
     }
 }
