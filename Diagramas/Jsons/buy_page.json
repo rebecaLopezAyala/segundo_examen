@@ -1,0 +1,36 @@
+{
+    "companies":[
+        {
+            "companyName":"Totto",
+            "products":[
+                {
+                    "title": "Mochila Rosada - Niña",
+                    "image":"https://tottoelsalvador.vteximg.com.br/arquivos/ids/167485-1000-1000/morral-para-nina-rayol-estampado-2iq_1.jpg?v=636760743661730000",
+                    "description":"Mochila Rosada para niña, estampada",
+                    "price":"$7.00",
+                    "discount":"50%",
+                    "finalPrice":"$3.50",
+                    "currency":"usd"
+                },
+                {
+                    "title": "Mochila Rosada - Niña",
+                    "image":"https://tottoelsalvador.vteximg.com.br/arquivos/ids/167485-1000-1000/morral-para-nina-rayol-estampado-2iq_1.jpg?v=636760743661730000",
+                    "description":"Mochila Rosada para niña, estampada",
+                    "price":"$7.00",
+                    "discount":"50%",
+                    "finalPrice":"$3.50",
+                    "currency":"usd"
+                },
+                {
+                    "title": "Mochila Rosada - Niña",
+                    "image":"https://tottoelsalvador.vteximg.com.br/arquivos/ids/167485-1000-1000/morral-para-nina-rayol-estampado-2iq_1.jpg?v=636760743661730000",
+                    "description":"Mochila Rosada para niña, estampada",
+                    "price":"$7.00",
+                    "discount":"50%",
+                    "finalPrice":"$3.50",
+                    "currency":"usd"
+                }
+            ]
+        }
+    ]
+}
